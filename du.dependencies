@@ -1,11 +1,11 @@
 [
   {
-    "repository":   "DirtyUnicorns/android_kernel_huawei_angler",
+    "repository":   "storm119/superuber-kernel-angler",
     "target_path":  "kernel/huawei/angler",
-    "branch":       "o8x"
+    "branch":       "8.1.0"
   },
   {
-    "repository":  "DirtyUnicorns/android_vendor_huawei",
+    "repository":  "storm119/android_vendor_huawei",
     "target_path": "vendor/huawei",
     "branch":      "o8x"
   }

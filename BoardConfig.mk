@@ -39,10 +39,12 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
-TARGET_KERNEL_CONFIG := angler_defconfig
+# Inline kernel building
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-7.x/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
+TARGET_KERNEL_CONFIG := superuber_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 BOARD_USES_ALSA_AUDIO := true
 BOARD_HAVE_BLUETOOTH := true
