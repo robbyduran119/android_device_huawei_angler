@@ -2,7 +2,7 @@
   {
     "repository":   "storm119/superuber-kernel-angler",
     "target_path":  "kernel/huawei/angler",
-    "branch":       "8.1.0"
+    "branch":       "o8x"
   },
   {
     "repository":  "storm119/android_vendor_huawei",
