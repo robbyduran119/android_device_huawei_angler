@@ -439,6 +439,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.data_no_toggle=1
 
+
+# Nexus Experience
+PRODUCT_COPY_FILES += \
+    device/huawei/angler/nexus.xml:system/etc/sysconfig/nexus.xml
+
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
